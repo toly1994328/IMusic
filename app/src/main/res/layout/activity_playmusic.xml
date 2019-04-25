@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_item"/>
+
+    <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bar_home">
+
+        <RelativeLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_playing_songs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"/>
+
+            <RelativeLayout
+                    android:layout_below="@id/vp_playing_songs"
+                    android:id="@+id/rl_song_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"/>
+
+            <include
+                    android:layout_alignParentBottom="true"
+                    android:id="@+id/rl_playing_song"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/playing_song_item"/>
+        </RelativeLayout>
+
+        <include
+                android:id="@+id/ll_playing_sliding"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                layout="@layout/playlist_sliding"/>
+    </android.support.v4.widget.DrawerLayout>
+
+
+    <ImageView
+            android:id="@+id/btn_play"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:background="@drawable/ripple_songlist_add_fab"
+            android:contentDescription="@null"
+            android:elevation="6dp"
+            android:onClick="btnPlayMusic"
+            android:padding="5dp"
+            android:tint="#fff"
+            android:src="@drawable/icon_stop_2"/>
+
+</RelativeLayout>

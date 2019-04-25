@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+    <ImageView
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_margin="@dimen/dp_30"
+            android:padding="@dimen/dp_2"
+            android:src="@drawable/icon_play_loop"/>
+
+    <ImageView
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_margin="@dimen/dp_30"
+
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/icon_love"
+    />
+
+    <com.toly1994.tolymusic.widget.AlphaImageView
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+            android:layout_margin="@dimen/dp_30"
+
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/icon_config"
+    />
+
+    <com.toly1994.tolymusic.widget.AlphaImageView
+            android:layout_width="@dimen/default_icon_size"
+            android:layout_height="@dimen/default_icon_size"
+
+            android:layout_margin="@dimen/dp_30"
+            android:padding="@dimen/dp_4"
+            android:src="@drawable/icon_more_h"
+    />
+</LinearLayout>

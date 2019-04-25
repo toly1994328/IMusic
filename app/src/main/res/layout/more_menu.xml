@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dp"
+>
+
+    <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            card_view:cardCornerRadius="3dp">
+
+        <ListView
+                android:id="@+id/lv_more_menu"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/title_background_light"
+                android:padding="7dp"/>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

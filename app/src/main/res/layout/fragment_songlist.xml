@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_songlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/playing_window_padding"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"/>
+
+    <ImageView
+            android:id="@+id/iv_add_songlist"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="65dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ripple_songlist_add_fab"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:padding="15dp"
+            android:src="@drawable/plus"
+            android:elevation="7dp"/>
+
+</RelativeLayout>

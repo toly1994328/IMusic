@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lbrong.lmusicplayer.AlbumHomeActivity
+    	|com.lbrong.lmusicplayer.ArtistHomeActivity
+    	|com.lbrong.lmusicplayer.AddSongListActivity" >
+
+    <item
+        android:id="@+id/action_play"
+        android:title="@string/more_menu_play"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_random_album"
+        android:title="@string/more_menu_random_all"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_list"
+        android:title="@string/more_menu_add_list"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_songlist"
+        android:title="@string/more_menu_add_songlist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_about_artist"
+        android:title="@string/more_menu_about_artist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_delete"
+        android:title="@string/more_menu_delete"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="80"
+        android:title="@string/action_search"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom"/>
+
+</menu>

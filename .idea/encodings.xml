@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/adapter/ChooseSongListBaseAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/adapter/ChooseTimingBaseAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/adapter/MoreMenuBaseAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/db/SongListDBAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/db/dao/MusicDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/db/dao/SongListDao.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/domain/Album.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/domain/Artist.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/domain/ArtistMusicInfo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/domain/Song.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/DialogUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/ImageUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/MTextUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/MoreMenuUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/SongsSortByLettersUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/app/utils/SystemUtils.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/AddSongListActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/AlbumHomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/ArtistHomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/HomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/PlayMusicActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/SearchActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/activity/SongListHomeActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/receiver/MediaControlReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/receiver/MusicWidgetProvider.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/receiver/TimingStopMusicReceiver.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/four/service/PlayingService.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/AlbumsFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/ArtistFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/PlayingSongControlFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/PlayingSongCoverFragemnt.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/PlayingSongMessageFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/SearchAllResultFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/SearchHomeFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/SearchResultFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/fragment/SongListFragment.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/itf/impl/BaseMoreMenuClickListenerImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/itf/impl/MoreMenuImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/widget/MusicItem.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/toly1994/tolymusic/widget/SearchResultItem.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

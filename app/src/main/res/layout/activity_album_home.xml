@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_item"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_album_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/album_home_item"
+            android:background="@android:color/white"
+            android:elevation="2dp">
+
+        <ImageView
+                android:id="@+id/iv_album_home_cover"
+                android:layout_width="@dimen/album_home_item"
+                android:layout_height="@dimen/album_home_item"
+                android:background="@color/titleBackground"
+                android:contentDescription="@drawable/default_music_icon"
+                android:src="@drawable/default_music_icon"/>
+
+        <TextView
+                android:id="@+id/tv_album_home_song_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/iv_album_home_cover"
+                android:padding="1dp"
+                android:singleLine="true"
+                android:text="@null"
+                android:textSize="12sp"/>
+
+        <TextView
+                android:id="@+id/tv_album_home_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_album_home_song_count"
+                android:layout_alignLeft="@id/tv_album_home_song_count"
+                android:singleLine="true"
+                android:text="@null"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/iv_album_home_time"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignLeft="@id/tv_album_home_song_count"
+                android:layout_below="@id/tv_album_home_song_count"
+                android:contentDescription="@null"
+                android:paddingLeft="1dp"
+                android:paddingRight="3dp"
+                android:paddingTop="2dp"
+                android:src="@drawable/time"/>
+
+        <TextView
+                android:id="@+id/tv_album_home_time_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_album_home_song_count"
+                android:layout_toRightOf="@id/iv_album_home_time"
+                android:singleLine="true"
+                android:text="@null"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_album_home_songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"/>
+
+    <ViewStub
+            android:id="@+id/vs_not_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/not_song_info"/>
+
+</LinearLayout>

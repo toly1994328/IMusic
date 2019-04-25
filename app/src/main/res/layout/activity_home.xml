@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titleBackground"
+            android:orientation="vertical">
+
+        <include
+                android:id="@+id/bar_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/toolbar_item"/>
+
+        <android.support.design.widget.TabLayout
+                android:id="@+id/id_tl_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/top_bar_height"
+                android:background="@color/colorBg"
+                app:tabIndicatorColor="@color/colorPrimary"
+                app:tabIndicatorHeight="1.5dp"
+                app:tabBackground="@android:color/transparent"
+                app:tabSelectedTextColor="@color/colorDefaultText"
+                app:tabTextAppearance="@style/TabLayoutTextStyle"
+                app:tabTextColor="@color/colorDefaultSubText">
+        </android.support.design.widget.TabLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/vp_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"/>
+
+    <include
+            android:id="@+id/rl_bottom_control"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            layout="@layout/playing_window"/>
+
+</RelativeLayout>

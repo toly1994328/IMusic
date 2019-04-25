@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+            android:id="@+id/iv_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/titleBackground"
+            android:contentDescription="@null"/>
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9076C2AF"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+
+    <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="#B4000000"
+            android:gravity="center">
+
+        <ImageView
+                android:id="@+id/iv_count"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:contentDescription="@null"
+                android:paddingTop="2dp"
+                android:src="@drawable/play_list"/>
+
+        <TextView
+                android:id="@+id/tv_song_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/iv_count"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+
+        <ImageView
+                android:id="@+id/iv_time"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/tv_song_count"
+                android:contentDescription="@null"
+                android:paddingTop="2dp"
+                android:src="@drawable/time"/>
+
+        <TextView
+                android:id="@+id/tv_time_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_toRightOf="@id/iv_time"
+                android:textColor="#ffffff"
+                android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_songlist_home_songs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_message"
+            android:background="@color/main_gray_background"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"/>
+
+</RelativeLayout>

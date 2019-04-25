@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MusicItem">  
+        <attr name="musicName" format="string"/>  
+        <attr name="musicAlbums" format="string"/>  
+        <attr name="showLine" format="boolean"/> 
+    </declare-styleable> 
+    
+    <declare-styleable name="PagerTabLayout">
+        <attr name="z_ptv_IndicatorColor" format="color" />
+        <attr name="z_ptv_UnderlineColor" format="color" />
+        <attr name="z_ptv_DividerColor" format="color" />
+        <attr name="z_ptv_IndicatorHeight" format="dimension" />
+        <attr name="z_ptv_UnderlineHeight" format="dimension" />
+        <attr name="z_ptv_DividerPadding" format="dimension" />
+        <attr name="z_ptv_TabPaddingLeftRight" format="dimension" />
+        <attr name="z_ptv_ScrollOffset" format="dimension" />
+        <attr name="z_ptv_TabBackground" format="reference" />
+        <attr name="z_ptv_ShouldExpand" format="boolean" />
+        <attr name="z_ptv_TextAllCaps" format="boolean" />
+    </declare-styleable>
+    <!--一个自定义控件-->
+    <declare-styleable name="ProgressView">
+        <!--自定义属性名 和 类型-->
+        <attr name="z_bar_color" format="color"/>
+    </declare-styleable>
+
+    <!--一个自定义控件-->
+    <declare-styleable name="ToggleImageView">
+        <!--自定义属性名 和 类型-->
+        <attr name="z_toggle_src" format="reference"/>
+    </declare-styleable>
+</resources>

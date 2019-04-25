@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp">
+
+    <TextView
+            android:id="@+id/tv_artist_icon"
+            android:layout_width="@dimen/artist_cover_icon"
+            android:layout_height="@dimen/artist_cover_icon"
+            android:layout_centerVertical="true"
+            android:background="@color/titleBackground"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+
+    <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toLeftOf="@id/iv_more"
+            android:layout_toRightOf="@id/tv_artist_icon"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/tv_artist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/bestlike_music_default_name"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+
+        <TextView
+                android:id="@+id/tv_artist_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/bestlike_music_default_name"
+                android:textSize="12sp"/>
+    </LinearLayout>
+
+    <ImageView
+            android:id="@+id/iv_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@drawable/more_icon"
+            android:focusable="false"
+            android:src="@drawable/more_icon"/>
+
+    <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/tv_artist_icon"
+            android:layout_marginTop="20dp"
+            android:background="@color/line_gray"
+            android:visibility="visible"/>
+
+</RelativeLayout>

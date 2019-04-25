@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+            android:id="@+id/bar_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/toolbar_item"/>
+
+    <TextView
+            android:id="@+id/tv_all_album"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/title_album"
+            android:textSize="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/artist_home_albums"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="horizontal"/>
+
+    <TextView
+            android:id="@+id/tv_all_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/all_songs"
+            android:textSize="15sp"/>
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/artist_home_songs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:scrollbars="vertical"/>
+
+    <ViewStub
+            android:id="@+id/vs_not_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout="@layout/not_song_info"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"
+>
+
+    <RelativeLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <com.toly1994.tolymusic.widget.SearchResultItem
+                android:id="@+id/sr_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        <com.toly1994.tolymusic.widget.SearchResultItem
+                android:id="@+id/sr_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sr_one"
+                android:visibility="gone"/>
+
+        <com.toly1994.tolymusic.widget.SearchResultItem
+                android:id="@+id/sr_three"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sr_two"
+                android:visibility="gone"/>
+
+        <include
+                android:id="@+id/rl_not_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/not_search_result"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff">
+
+    <SeekBar
+            android:paddingStart="0dp"
+            android:paddingEnd="0dp"
+            android:id="@+id/sbar_song"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_gray_background"
+            android:progressDrawable="@drawable/seekbar_progress_style"
+            android:thumb="@drawable/seekbar_progress_thumb"/>
+
+    <TextView
+            android:id="@+id/tv_now_progress"
+            android:layout_width="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sbar_song"
+            android:text="1111"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:textColor="@color/deep_blue"
+            android:textSize="13sp"/>
+
+    <TextView
+            android:id="@+id/tv_song_duration"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sbar_song"
+            android:text="1111"
+            android:gravity="right"
+            android:paddingRight="20dp"
+            android:textColor="@color/deep_blue"
+            android:textSize="13sp"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_now_progress"
+            android:orientation="vertical">
+
+        <com.toly1994.tolymusic.widget.AlwaysMarqueeTextView
+                android:layout_margin="5dp"
+                android:id="@+id/tv_song_name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="20sp"/>
+
+        <com.toly1994.tolymusic.widget.AlwaysMarqueeTextView
+                android:layout_margin="5dp"
+                android:id="@+id/tv_singer_name"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:textColor="@color/colorDefaultText"
+                android:textSize="@dimen/default_text_size"/>
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dp_8"
+                android:orientation="horizontal">
+
+            <com.toly1994.tolymusic.widget.AlphaImageView
+                    android:id="@+id/iv_last_music"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/iv_pause_music"
+                    android:padding="4dp"
+                    android:layout_marginEnd="30dp"
+
+                    android:src="@drawable/icon_per_2"/>
+
+            <com.toly1994.tolymusic.widget.AlphaImageView
+                    android:id="@+id/iv_pause_music"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerInParent="true"
+                    android:elevation="6dp"
+                    android:src="@drawable/icon_start_3"/>
+
+            <com.toly1994.tolymusic.widget.AlphaImageView
+                    android:id="@+id/iv_next_music"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_toEndOf="@id/iv_pause_music"
+                    android:layout_marginStart="30dp"
+                    android:padding="4dp"
+                    android:src="@drawable/icon_next_2"/>
+        </RelativeLayout>
+
+
+
+        <!--<LinearLayout-->
+        <!--android:id="@+id/ll_volume_control"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="10dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_volume_down"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="?android:attr/selectableItemBackgroundBorderless"-->
+        <!--android:clickable="true"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/volume_down"/>-->
+
+        <!--<SeekBar-->
+        <!--android:id="@+id/sbar_volume"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="3"-->
+        <!--android:maxHeight="1.5dip"-->
+        <!--android:minHeight="1.5dip"-->
+        <!--android:progressDrawable="@drawable/seekbar_volume_style"-->
+        <!--android:thumb="@drawable/seekbar_volume_thumb"/>-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_volume_up"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="?android:attr/selectableItemBackgroundBorderless"-->
+        <!--android:clickable="true"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/volume_up"/>-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.lbrong.lmusicplayer.PlayMusicActivity" >
+
+    <item
+        android:id="@+id/action_add_songlist"
+        android:icon="@drawable/plus"
+        android:title="@string/more_menu_add_songlist"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_music"
+        android:title="@string/action_search"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_equalizer"
+        android:title="@string/action_equalizer"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/more_menu_about_artist"
+        android:title="@string/more_menu_about_artist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_delete_music_for_playlist"
+        android:title="@string/action_delete_music_for_playlist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_add_playlist_to_songlist"
+        android:title="@string/action_add_playlist_to_songlist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_clean_playlist"
+        android:title="@string/action_clean_playlist"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_playing_for_timing"
+        android:title="@string/action_playing_for_timing"
+        app:showAsAction="never"/>
+
+</menu>

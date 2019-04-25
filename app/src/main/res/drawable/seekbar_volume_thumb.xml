@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 按下状态 -->
+    <item android:drawable="@drawable/shape_add_press_white" android:state_focused="true" android:state_pressed="true"/>
+    <!-- 普通无焦点状态 -拖动按钮 -->
+    <item android:drawable="@drawable/shape_add_press_white" android:state_focused="false" android:state_pressed="false"/>
+    <!-- 有焦点状态 -->
+    <item android:drawable="@drawable/shape_add_press_white" android:state_focused="true" android:state_pressed="false"/>
+    <!-- 有焦点 -->
+    <item android:drawable="@drawable/shape_add_press_white" android:state_focused="true"/>
+
+</selector>

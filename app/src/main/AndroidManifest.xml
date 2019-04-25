@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.toly1994.tolymusic">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/icon_music"
+            android:label="@string/app_name"
+            android:supportsRtl="true"
+            android:theme="@style/AppTheme">
+        <activity android:name=".four.activity.HomeActivity"
+                  android:screenOrientation="portrait"
+                  android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".four.activity.SearchActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name=".four.activity.AlbumHomeActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name=".four.activity.ArtistHomeActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name=".four.activity.AddSongListActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name=".four.activity.SongListHomeActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+        <activity android:name=".four.activity.PlayMusicActivity" android:launchMode="singleTop"
+                  android:screenOrientation="portrait"></activity>
+
+        <receiver android:name=".four.receiver.MediaControlReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name=".four.receiver.TimingStopMusicReceiver" android:exported="false">
+            <intent-filter>
+                <action android:name="com.toly1994.tolymusic.ACTION_ALARM_STOP_MUSIC"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name=".four.receiver.StartAppReceiver"
+                android:exported="false">
+            <intent-filter>
+                <action android:name="com.toly1994.tolymusic.START_ACTIVITY_FORM_NOTIFICATION"/>
+            </intent-filter>
+        </receiver>
+
+        <receiver
+                android:name=".four.receiver.MusicWidgetProvider"
+                android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.toly1994.tolymusic.WIDGET_LAST_ACTION"/>
+                <action android:name="com.toly1994.tolymusic.WIDGET_NEXT_ACTION"/>
+                <action android:name="com.toly1994.tolymusic.WIDGET_PLAYORPASUSE_ACTION"/>
+                <action android:name="com.toly1994.tolymusic.service.OPERATE_FINISH"/>
+                <action android:name="btn.itchq.com"/>
+            </intent-filter>
+            <meta-data
+                    android:name="android.appwidget.provider"
+                    android:resource="@xml/widget_small_provide"/>
+        </receiver>
+
+        <receiver android:name=".four.receiver.WidgetReceiver">
+            <intent-filter>
+                <action android:name="com.toly1994.tolymusic.WIDGET_LAST_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".four.service.PlayingService"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rv_singer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/playing_window_padding"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbars="vertical"/>

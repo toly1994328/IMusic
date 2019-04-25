@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="@dimen/album_small_item_icon_width"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp">
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground">
+
+        <ImageView
+                android:id="@+id/iv_album"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/titleBackground"
+                android:contentDescription="@null"/>
+
+        <TextView
+                android:id="@+id/tv_album_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_album"
+                android:layout_toLeftOf="@+id/iv_more"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="@string/bestlike_music_default_name"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+        <ImageView
+                android:id="@+id/iv_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_album_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/tv_album_name"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:src="@drawable/more_icon"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
